@@ -7,7 +7,6 @@ function App() {
     <>
       <div className="app-name">
         <h1>Periodic Table</h1>
-        <small>by atomkern</small>
       </div>
       <PeriodicTabe />
     </>

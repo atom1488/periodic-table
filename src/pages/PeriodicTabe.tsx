@@ -21,6 +21,10 @@ const colorMap: any = {
 export default function PeriodicTabe() {
   return (
     <div className="periodic-table">
+      <div className="periodic-element-aliases" style={{ gridArea: "6 / 3" }}>*</div>
+      <div className="periodic-element-aliases" style={{ gridArea: "9 / 2" }}>*</div>
+      <div className="periodic-element-aliases" style={{ gridArea: "7 / 3" }}>**</div>
+      <div className="periodic-element-aliases" style={{ gridArea: "10 / 2" }}>**</div>
       {data.elements.map((element) => (
         <div
           key={element.name}
@@ -37,7 +41,7 @@ export default function PeriodicTabe() {
             className="number"
             key={element.number}
             style={{
-              backgroundColor: `${(colorMap as any)[element.category]}00`,
+              backgroundColor: "transparent",
             }}
           >
             {element.number}
@@ -46,7 +50,7 @@ export default function PeriodicTabe() {
             className="name"
             key={element.name}
             style={{
-              backgroundColor: `${(colorMap as any)[element.category]}00`,
+              backgroundColor: "transparent",
             }}
           >
             {element.name}
