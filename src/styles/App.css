@@ -1,0 +1,9 @@
+.app-name {
+  color: white;
+  text-align: center;
+}
+
+.app-name h1 {
+  margin: 0;
+  margin-top: 10px;
+}

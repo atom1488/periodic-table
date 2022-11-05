@@ -1,0 +1,43 @@
+.periodic-table {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(18, 64px);
+  grid-template-rows: repeat(10, 64px);
+  grid-gap: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.periodic-element {
+  border: 2px solid #aaa;
+  padding-left: 1rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.periodic-element:hover {
+  transform: scale(1.25, 1.25);
+  z-index: 1;
+}
+
+.periodic-element .number {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 10px;
+}
+
+.periodic-element .name {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  font-size: 10px;
+}
+
+* {
+  background-color: #1d1d1d;
+}
